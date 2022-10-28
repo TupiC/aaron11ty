@@ -1,0 +1,43 @@
+@include breakpoint(0, $mobile) {
+    #about {
+        margin-top: $sectionMargin;
+        padding-top: $sectionMargin;
+        height: auto;
+        width: 100vw;
+        padding: 0 $leftMargin $leftMargin+10px $leftMargin;
+        background-color: $darkwhite;
+
+        div {
+            img {
+                height: 458px;
+                width: 100vw;
+                object-fit: cover;
+                object-position: 0 0;
+            }
+        }
+
+        .super-headline {
+            margin-top: $leftMargin;
+        }
+
+        h2 {
+            color: $darkorange;
+            font-size: 28px;
+            font-weight: 300;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 16px;
+            color: $darkgrey;
+            text-align: justify;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        a {
+            color: $darkgrey;
+            margin-bottom: $sectionMargin/2;
+        }
+    }
+}
